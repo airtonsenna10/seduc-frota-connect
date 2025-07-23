@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Eye, EyeOff } from "lucide-react"
-import seducLogo from "@/assets/seduc-logo.png"
+import sisfrota from "/lovable-uploads/364bcb6d-e8bc-4b2e-8d6c-917260041610.png"
 
 interface LoginFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -35,9 +35,9 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
           <div className="flex flex-col items-center text-center mb-6">
             <div className="relative mb-4">
               <img 
-                src={seducLogo} 
-                alt="SEDUC/MA Logo"
-                className="w-20 h-20 object-contain"
+                src={sisfrota} 
+                alt="SISFROTA Logo"
+                className="w-24 h-24 object-contain"
               />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Login</h1>
@@ -103,8 +103,7 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
           <div className="text-left">
             <a 
               href="#" 
-              className="text-sm font-medium hover:underline"
-              style={{ color: "var(--forgot-link)" }}
+              className="text-sm font-medium text-primary hover:underline"
             >
               Esqueceu sua senha?
             </a>
@@ -113,7 +112,7 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
           {/* Login Button */}
           <Button 
             disabled={isLoading || !email || !password} 
-            className="h-12 bg-gray-300 hover:bg-gray-400 text-gray-600 font-medium text-base disabled:opacity-50"
+            className="h-12 bg-primary hover:bg-primary-hover text-primary-foreground font-medium text-base disabled:opacity-50 disabled:bg-gray-300 disabled:text-gray-500"
           >
             {isLoading ? "ENTRANDO..." : "LOGIN"}
           </Button>

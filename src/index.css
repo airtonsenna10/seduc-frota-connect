@@ -8,44 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* SEDUC/MA Fleet Management Color Palette */
-    --background: 210 28% 8%;
-    --foreground: 210 40% 98%;
+    /* SISFROTA Color Palette */
+    --background: 220 25% 95%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 25 100% 55%;
+    --primary: 160 45% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 25 100% 50%;
+    --primary-hover: 160 45% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 60% 45%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 25 100% 55%;
+    --accent: 200 60% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 25 100% 55%;
+    --border: 220 15% 85%;
+    --input: 220 15% 95%;
+    --ring: 160 45% 35%;
 
-    /* Custom design tokens */
-    --fuel-gradient: linear-gradient(135deg, hsl(15 100% 60%), hsl(25 100% 55%), hsl(40 100% 50%));
+    /* Custom SISFROTA design tokens */
+    --sisfrota-green: 160 45% 35%;
+    --sisfrota-blue: 200 60% 45%;
     --login-card: 0 0% 100%;
-    --login-card-shadow: 0 20px 40px -12px hsl(0 0% 0% / 0.25);
-    --input-bg: hsl(210 40% 96.1%);
-    --input-border: hsl(214.3 31.8% 91.4%);
-    --forgot-link: hsl(25 100% 55%);
-    --button-disabled: hsl(210 11% 71%);
+    --login-card-shadow: 0 20px 40px -12px hsl(200 60% 45% / 0.15);
+    --input-bg: hsl(220 15% 98%);
+    --input-border: hsl(220 15% 85%);
+    --forgot-link: hsl(160 45% 35%);
+    --button-primary: hsl(160 45% 35%);
+    --button-primary-hover: hsl(160 45% 30%);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
