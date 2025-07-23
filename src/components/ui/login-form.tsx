@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Eye, EyeOff, Fuel } from "lucide-react"
+import { Eye, EyeOff } from "lucide-react"
+import seducLogo from "@/assets/seduc-logo.png"
 
 interface LoginFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -33,12 +34,11 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
           {/* Logo and Title */}
           <div className="flex flex-col items-center text-center mb-6">
             <div className="relative mb-4">
-              <div 
-                className="w-20 h-20 rounded-full flex items-center justify-center"
-                style={{ background: "var(--fuel-gradient)" }}
-              >
-                <Fuel className="h-10 w-10 text-white" />
-              </div>
+              <img 
+                src={seducLogo} 
+                alt="SEDUC/MA Logo"
+                className="w-20 h-20 object-contain"
+              />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Login</h1>
           </div>
